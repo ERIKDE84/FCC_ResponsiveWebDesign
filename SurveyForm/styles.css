@@ -1,0 +1,119 @@
+:root{
+    --main-color: #352e2e;
+    --second-color: #ca1a1a;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: var(--main-color);
+    color: aliceblue;
+    margin: 0px;
+}
+main{
+    margin: 20px 20% 20px 20%;
+    background-color: var(--second-color);
+    border: black 10px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+.header{
+    border: black dashed 3px;
+}
+#title{
+    text-align: center;
+    font-weight: 700;
+}
+#description{
+    font-weight: bold;
+    margin:20px 5%;
+}
+form{
+    text-align: center;
+}
+form label{
+    text-align: left;
+    display: block;
+    margin: 40px auto 2px auto;
+}
+form input{
+    width: 96%;
+    height: 25px;
+    padding: 0px 2%;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+}
+form .regularity-payment{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0px auto;
+    padding: 20px auto 0px auto ;
+}
+.regularity, .payment{
+    width: 45%;
+}
+.regularity label{
+    margin-top: 0px;
+}
+.regularity select{
+    width: 100%;
+    height: 25px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+}
+form .checkboxes-container{
+    margin: 40px auto 2px auto;
+}
+form .checkboxes{
+    display: flex;
+    align-items: center;
+    margin:10px auto 0px auto;
+}
+form .paymentservice{
+    display: flex;
+    align-items: center;
+    margin: 0px auto 2px 20%;
+}
+#receipt, #newsletter, #creditdebitcard, #paypal{
+    width: 10%;
+    height: auto;
+    margin: 0px;
+}
+.checkboxes label, .paymentservice label{
+    margin: 0px;
+}
+#suggestions{
+    outline: none;
+    width: 100%;
+    height: 15%;
+    border-radius: 5px;
+}
+#submit{
+    height: auto;
+    min-width: 110px;
+    border-radius: 5px;
+    background: var(--main-color);
+    font-size: 25px;
+    color: aliceblue;
+}
+#submit:focus{
+    background-color: var(--second-color);
+}
+#submit, input, select:hover{
+    cursor: pointer;
+}
+footer ::selection{
+    background-color: white;
+    color: black;
+}
+footer{
+    background-color: black;
+}
+footer p{
+    margin: 0px;
+    padding: 20px 15%;
+    font-size: 12px;
+    text-align: center;
+}
