@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="form_icon_white.png">
+    <title>Thank you!</title>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h1 id="title">YOU ARE GREAT</h1>
+            <p id="description">Thank you for your donation. Even 5$ can make a big difference and the whole
+                team
+                and i
+                would like to thank you for that.</p>
+        </div>
+
+        <form id="survey-form" action="">
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" placeholder="...your full name" required>
+
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" placeholder="... your email address" required>
+
+            <label id="number-label" for="number">How much do you want to donate?</label>
+            <input id="number" type="number" min="1" max="10000" placeholder="5" required>
+
+            <div class="regularity-payment">
+                <div class="regularity">
+                    <label for="dropdown">How regularly do you want to donate?</label>
+                    <select name="frequency" id="dropdown">
+                        <option value="once">Once</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </div>
+
+                <div class="payment">
+                    <div class="paymentservice">
+                        <input id="creditdebitcard" type="radio" name="paymentservice" value="creditdebitcard">
+                        <label for="creditdebitcard">Credit-/Debitcard</label>
+                    </div>
+
+                    <div class="paymentservice">
+                        <input id="paypal" type="radio" name="paymentservice" value="paypal">
+                        <label for="paypal">PayPal</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkboxes-container">
+                <div class="checkboxes">
+                    <input id="receipt" type="checkbox" value="receipt">
+                    <label for="receipt">I would like you to send me a receipt for my donation.</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="newsletter" type="checkbox" value="newsletter">
+                    <label for="newsletter">I would like you to send me your Newsletter.</label>
+                </div>
+            </div>
+
+            <label for="suggestions">We are constantly trying to improve our service for you.
+                If you have any suggestions or comments for us, let us know.</label>
+            <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="...suggestions"></textarea>
+
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>Created by Erik Eichelkraut and inspired by the Responsive Webdesign Curriculum of freeCodeCamp</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
