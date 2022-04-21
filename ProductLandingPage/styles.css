@@ -1,0 +1,72 @@
+:root{
+    --main-color: rgb(20, 61, 138);
+    --text-color: white;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(247, 225, 184);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#header-img{
+    max-width: 100%;
+}
+
+#nav-bar{
+  
+}
+
+#nav-bar ul{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    margin: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.nav-link a{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 22px;
+    letter-spacing: 1px;
+    border: 3px solid transparent;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.nav-link a:hover{
+    border-color: var(--text-color);
+    cursor: pointer;
+}
+
+
+
+/*
+to do:
+- add logo/company name in nav bar
+- text and subscribe button on header img
+- change header img to something more tarnsparent
+- add margin to body to keep alignment on the sides
+- style subscribe button in navbar and headerimg
+
+- about section: 
+    - embbeded video 
+    - p tag with placeholder text
+
+- specs section:
+
+- footer section:
+
+- add responsive design
+
+
+*/
