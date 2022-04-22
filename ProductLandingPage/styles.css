@@ -1,5 +1,5 @@
 :root{
-    --main-color: rgb(20, 61, 138);
+    --main-color: rgb(18, 32, 58);
     --text-color: white;
 }
 
@@ -14,21 +14,31 @@ body{
 }
 
 #nav-bar{
-  
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
 }
 
 #nav-bar ul{
-    position: fixed;
-    top: 0px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     list-style-type: none;
     background-color: var(--main-color);
     color: var(--text-color);
     margin: 0;
     width: 100%;
-    height: 60px;
+    padding: 0 10%;
+}
+
+.left{
+    justify-content: left;
+}
+
+.right{
+    justify-content: right;
 }
 
 .nav-link a{
@@ -52,10 +62,8 @@ body{
 
 /*
 to do:
-- add logo/company name in nav bar
 - text and subscribe button on header img
 - change header img to something more tarnsparent
-- add margin to body to keep alignment on the sides
 - style subscribe button in navbar and headerimg
 
 - about section: 
