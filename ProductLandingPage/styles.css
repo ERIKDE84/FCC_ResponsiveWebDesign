@@ -20,6 +20,7 @@ body{
     height: 60px;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 #nav-bar ul{
@@ -58,23 +59,51 @@ body{
     cursor: pointer;
 }
 
+.overlay {
+    position: absolute;
+    top: 150px;
+    margin: 0 10% 0 10%;
+    width: 50%;
+    color: var(--text-color);
+}
 
+#about {
+    height: 1000px;
+
+}
+
+footer {
+    background-color: var(--main-color);
+    height: 40px;
+    margin: 0;
+    padding: 0 10%;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
 
 /*
 to do:
-- text and subscribe button on header img
-- change header img to something more tarnsparent
+- text on header img stylen
 - style subscribe button in navbar and headerimg
-
+- design and add logo to navbar
+ 
 - about section: 
     - embbeded video 
     - p tag with placeholder text
 
 - specs section:
+    - Table with some made up specifications and comparison to earlier models
+
 
 - footer section:
 
-- add responsive design
-
+- add responsive design:
 
 */
