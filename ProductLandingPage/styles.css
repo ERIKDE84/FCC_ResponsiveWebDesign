@@ -1,14 +1,16 @@
 :root{
     --main-color: rgb(18, 32, 58);
     --text-color: white;
+    --background: #a9bddf;
 }
 
 body{
     margin: 0;
-    background-color: rgb(247, 225, 184);
+    background-color: var(--background);
     font-family:Arial, Helvetica, sans-serif;
 }
 
+/* Header Section with nav-bar */
 #header-img{
     max-width: 100%;
 }
@@ -20,7 +22,6 @@ body{
     height: 60px;
     display: flex;
     justify-content: center;
-    z-index: 2;
 }
 
 #nav-bar ul{
@@ -42,7 +43,7 @@ body{
     justify-content: right;
 }
 
-.nav-link a{
+.nav-button a{
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -54,27 +55,69 @@ body{
     text-decoration: none;
 }
 
-.nav-link a:hover{
+.nav-button a:hover{
     border-color: var(--text-color);
     cursor: pointer;
 }
 
 .overlay {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 150px;
     margin: 0 10% 0 10%;
     width: 50%;
     color: var(--text-color);
+    line-height: 40px;
+    font-size: 40px;
 }
 
-#about {
-    height: 1000px;
+.overlay p {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
 
+.subscribe{
+    align-self: flex-end;
+    padding: 0px;
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border: transparent solid 3px;
+    border-radius: 20px;
+}
+
+.subscribe a{
+    background-color: var(--main-color);
+    width: 150px;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border: 3px solid var(--main-color);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.subscribe a:hover{
+    color: var(--main-color);
+    background-color: var(--text-color);
+    cursor: pointer;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    
 }
 
 footer {
     background-color: var(--main-color);
-    height: 40px;
+    height: 50px;
     margin: 0;
     padding: 0 10%;
     color: var(--text-color);
@@ -89,20 +132,17 @@ footer p {
 }
 
 /*
-to do:
-- text on header img stylen
-- style subscribe button in navbar and headerimg
-- design and add logo to navbar
+header:
+    - design and add logo to navbar
  
-- about section: 
-    - embbeded video 
-    - p tag with placeholder text
+about: 
+    - add two columns
+    - position text left and video right
+    - style text and title
+    - resize video
 
-- specs section:
+specs:
     - Table with some made up specifications and comparison to earlier models
-
-
-- footer section:
 
 - add responsive design:
 
