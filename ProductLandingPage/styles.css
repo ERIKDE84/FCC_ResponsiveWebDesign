@@ -26,6 +26,7 @@ body{
     height: 60px;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 #nav-bar ul{
@@ -134,8 +135,9 @@ body{
     border-radius: 15px;
 }
 
-#about h3{
+h3{
     font-size: 30px;
+    margin-top: 0px;
 }
 
 #about p{
@@ -147,6 +149,82 @@ body{
 #about #video{
     height: 500px;
     width: 750px;
+}
+
+#specs {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 10%;
+    padding: 30px;
+    background-color: var(--main-color);
+    border: 3px solid var(--main-color);
+    border-radius: 15px;
+    font-size: 22px;
+}
+
+#specs table{
+    border: var(--text-color) 2px solid;
+    border-collapse: collapse;
+}
+
+#specs th{
+    text-align: left;
+    font-size: 35px;
+    width: 25%;
+    padding: 20px 10px;
+    border-bottom: 1px solid ;
+}
+
+#specs td{
+    padding: 20px 10px;
+    border-bottom: 1px solid ;
+}
+
+#specs tr:nth-child(even){
+    background-color: #434549;
+}
+
+#form-section {
+    min-height: 100px;
+    margin: 25px 10%;
+    padding: 30px;
+    background-color: var(--main-color);
+    border: 3px solid var(--main-color);
+    border-radius: 15px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+label[for=email]{
+    align-self: center;
+    margin: 0px 20px;
+}
+
+#email{
+    width: 40%;
+    font-size: 22px;
+}
+
+#submit{
+    margin: 0px 10px;
+    height: 100%;
+    align-self: center;
+    background-color: var(--action-color);
+    color: var(--text-color);
+    font-size: 22px;
+    border: var(--main-color) solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#submit:hover{
+    background-color: var(--text-color);
+    color: black;
+    cursor: pointer;
 }
 
 /* Footer Section */
@@ -165,19 +243,30 @@ footer p {
     width: 100%;
 }
 
+/* Responsive Design */
+@media only screen and (max-width: 1600px){
+    .overlay {
+        font-size: 30px;
+    }
+
+    .overlay p{
+        font-size: 22px;
+    }
+
+    #about #video{
+        height: 400px;
+        width: 600px;
+    }
+}
+
+
 /*
-header:
- 
-about: 
+responsive design down to 400px:
+    - nächster Breakpoint bei 1400px 
 
-specs:
-    - Table with some made up specifications and comparison to earlier models
+- JS: DarkMode Toogle
+- JS: at submit display message if already subscribed 
 
-form:
-    - add needed elements (check with fcc requirements)
-    - position everything
-    - style everything
-
-- add responsive design:
+Bugs:
 
 */
